@@ -1,0 +1,3 @@
+interface Classifiable {
+    int getRank();
+}
