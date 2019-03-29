@@ -2,6 +2,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionListener;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
@@ -154,11 +155,12 @@ public class GraphForm extends JPanel {
     add(addButton);*/
         addButton.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent press) {
-                setText(nameTextField.getText(), graphList.getSelectedItem(),
+                   setText(nameTextField.getText(), graphList.getSelectedItem(),
                         verticesField.getValue(), edgeField.getValue(), pathTextField.getText(), imgField.getText());
-                addGraph();
-                }
-        });
+                     addGraph();
+                     new Table();
+                                    }
+                 });
 
         }
     public void setText(String name, Object graphType, Object vertices, Object edges, String path, String imgPath){

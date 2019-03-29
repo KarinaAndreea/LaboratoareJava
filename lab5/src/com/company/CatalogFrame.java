@@ -1,8 +1,8 @@
 package com.company;
+import javafx.scene.control.Tab;
+
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
-
-
 
 public class CatalogFrame extends JFrame {
     CatalogList list;
@@ -14,7 +14,7 @@ public class CatalogFrame extends JFrame {
         init();
         addComponents();
         this.pack();
-    }
+       }
     private void init() {
         setSize(500,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
